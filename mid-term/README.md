@@ -27,5 +27,12 @@ Copy your kaggle.json to the project path
 chmod 600 kaggle.json
 kaggle datasets download -d kemical/kickstarter-projects
 unzip kickstarter-projects.zip
-
 ```
+
+## Run app
+
+``` shell
+docker build -t kickstart-app .
+docker run -it -p 9696:9696 kickstart-app:latest
+```
+
